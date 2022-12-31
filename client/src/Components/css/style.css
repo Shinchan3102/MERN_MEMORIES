@@ -1,0 +1,175 @@
+/* body css */
+body {
+    background-color: #35363a;
+    color: white
+}
+
+.black {
+    background-color: #212529;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 1px 3px 12px black;
+}
+
+.bla {
+    background-color: #212529;
+}
+
+.grey,
+input {
+    background-color: #35363a;
+    color: white;
+}
+
+input {
+    border: 0;
+    border-radius: 5px;
+    height: 35px;
+    padding: 5px;
+    width: 100%;
+}
+
+button:focus-visible,
+button:focus,
+.btnh:focus,
+.btnh:focus-visible {
+    box-shadow: 0;
+    border: 0;
+}
+
+.disable {
+    background-color: #35363a;
+}
+
+.hov {
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.hov:hover {
+    transform: scale3d(1.025, 1.025, 1.025);
+}
+
+.hov-blue:hover {
+    border: 2px solid rgb(38, 80, 247);
+    cursor: pointer;
+}
+
+.bor-circle {
+    margin: 100px auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.fullHeight {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes circle {
+    0% {
+        border-top: 4px solid white;
+    }
+
+    25% {
+        border-top: 4px solid white;
+        border-right: 4px solid white;
+    }
+
+    50% {
+        border-top: 4px solid white;
+        border-right: 4px solid white;
+        border-bottom: 4px solid white;
+    }
+
+    75% {
+        border: 4px solid white;
+        border-top: 0;
+    }
+
+    100% {
+
+        border: 0;
+        border-left: 4px solid white;
+    }
+}
+
+.scroll {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.128);
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: rgb(33, 113, 232);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    animation: show 0.3s ease-in 0s 1 normal forwards;
+}
+
+
+.cardi:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.cardi:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.cardi:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.moveDown {
+    animation: down 1s ease-in 0s 1 normal forwards;
+    filter: blur(3px);
+    transform: translateY(-100%);
+}
+
+@keyframes down {
+    0% {
+        filter: blur(3px);
+        transform: translateY(-100%);
+    }
+
+    50% {
+        filter: blur(3px);
+        transform: translateY(-50%);
+    }
+
+    100% {
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes show {
+    0% {
+        opacity: 0.5;
+        filter: blur(3px);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
