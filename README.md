@@ -18,4 +18,4 @@ The App is called "MemoriesWorld" and it is a simple social media app that allow
 
 
 Setup:
-- run ```npm i && npm start``` for both client side and ```npm i && node src/app.js``` server side to start the app
+- run ```npm i && npm start``` for client side and ```npm i && node src/app.js``` for server side to start the app
