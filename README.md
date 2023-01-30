@@ -1,5 +1,4 @@
 # MERN_MEMORIES
-MemoriesWorld is an interactive social media application where a user can post comment and like one's post and memories
 
 ## Introduction
 
